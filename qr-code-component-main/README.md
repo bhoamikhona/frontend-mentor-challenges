@@ -6,10 +6,10 @@ This is my solution to the [QR code component challenge on Frontend Mentor](http
 
 ![1](https://user-images.githubusercontent.com/50435319/219865074-dbe00387-fd32-4f12-af06-effb4cd5a900.PNG)
 
-<!-- ### Links
+### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Solution URL: [Link](https://github.com/bhoamikhona/frontend-mentor-challenges/tree/main/qr-code-component-main)
+- Live Site URL: [Link](https://frontend-mentor-challenges-topaz-beta.vercel.app/)
 
 ### Built with
 
