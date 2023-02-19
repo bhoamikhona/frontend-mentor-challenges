@@ -17,15 +17,19 @@ body {
   background-color: var(--light-gray);
 }
 
+.qr-code {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .qr-code-card {
   background-color: var(--white);
   width: 300px;
   border-radius: 3%;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .qr-code-img {
@@ -48,4 +52,20 @@ body {
 .qr-code-details {
   font-weight: 400;
   color: var(--grayish-blue);
+}
+
+.attribution {
+  text-align: center;
+  width: 300px;
+  color: var(--grayish-blue);
+}
+
+.attribution-link:link,
+.attribution-link:visited {
+  color: var(--grayish-blue);
+}
+
+.attribution-link:hover,
+.attribution-link:active {
+  color: var(--dark-blue);
 }
