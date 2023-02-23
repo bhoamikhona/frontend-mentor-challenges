@@ -13,7 +13,7 @@ Mobile:
 ### Links
 
 - Solution URL: [Link](https://github.com/bhoamikhona/frontend-mentor-challenges/tree/main/product-preview-card-component-main)
-- Live Site URL: [Link]()
+- Live Site URL: [Link](https://frontend-mentor-challenges-zcyq.vercel.app/)
 
 ### Built with
 
