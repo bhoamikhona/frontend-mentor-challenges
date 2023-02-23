@@ -114,19 +114,16 @@ body {
   border: none;
   color: var(--white);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 .add-to-cart:hover {
   cursor: pointer;
   background-color: var(--hover-cyan);
   transition: 0.2s ease-in-out;
-}
-
-.button-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
 }
 
 /* FOOTER */
