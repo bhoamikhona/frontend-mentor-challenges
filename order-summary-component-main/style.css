@@ -150,6 +150,10 @@ body {
 
 /* FOOTER */
 
+.attribution {
+  width: 450px;
+}
+
 .attribution-link:link,
 .attribution-link:visited {
   color: var(--desaturated-blue);
@@ -158,4 +162,25 @@ body {
 .attribution-link:hover,
 .attribution-link:active {
   color: var(--dark-blue);
+}
+
+/* MOBILE SIZE */
+
+@media (max-width: 450px) {
+  .card {
+    width: 350px;
+    height: 590px;
+  }
+
+  .info {
+    padding: 25px;
+  }
+
+  .title {
+    padding-top: 10px;
+  }
+
+  .attribution {
+    width: 350px;
+  }
 }

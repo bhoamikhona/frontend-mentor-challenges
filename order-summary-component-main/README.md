@@ -8,7 +8,7 @@ Desktop:
 ![1](https://user-images.githubusercontent.com/50435319/221356371-2c159664-309f-4ccb-8422-004184fdd453.PNG)
 
 Mobile:
-![2](https://user-images.githubusercontent.com/50435319/221356373-a2e5de3c-6338-4ea9-942e-b2984d2f9df2.PNG)
+![2](https://user-images.githubusercontent.com/50435319/221357541-a348d129-64d6-4343-9081-c91f01b84016.PNG)
 
 ### Links
 
