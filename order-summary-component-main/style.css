@@ -31,7 +31,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -44,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 450px;
-  height: 690px;
+  /* height: 690px; */
   /* justify-content: space-between; */
   border-radius: 20px;
 }
@@ -63,9 +63,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   /* align-items: center; */
-  height: 100vh;
-  padding: 40px;
-  padding-top: 20px;
+  /* height: 100vh; */
+  padding: 30px;
+  /* padding-top: 20px; */
+  gap: 30px;
 }
 
 .title {
@@ -126,6 +127,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 700;
   font-size: 0.938rem;
+  box-shadow: hsla(245, 75%, 52%, 0.4);
 }
 
 .proceed-payment:hover {
@@ -167,8 +169,12 @@ body {
 /* MOBILE SIZE */
 
 @media (max-width: 450px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+
   .card {
-    width: 350px;
+    max-width: 350px;
     height: 590px;
   }
 
