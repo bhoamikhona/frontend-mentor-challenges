@@ -4,12 +4,12 @@ This is my solution to the [NFT preview card component challenge on Frontend Men
 
 ### Screenshot
 
-![1](https://user-images.githubusercontent.com/50435319/219865074-dbe00387-fd32-4f12-af06-effb4cd5a900.PNG)
+![1](https://user-images.githubusercontent.com/50435319/227178004-9a2eb188-ea61-4477-b5cd-d684dd50b72a.PNG)
 
 ### Links
 
-- Solution URL: [Link]()
-- Live Site URL: [Link]()
+- Solution URL: [Link](https://github.com/bhoamikhona/frontend-mentor-challenges/tree/main/nft-preview-card-component-main)
+- Live Site URL: [Link](https://bhoamikhona.github.io/frontend-mentor-challenges/nft-preview-card-component-main/index.html)
 
 ### Built with
 
