@@ -1,0 +1,144 @@
+:root {
+  --dark-blue: hsl(217, 54%, 11%);
+  --blue: hsl(216, 50%, 16%);
+  --light-blue: hsl(215, 32%, 27%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--soft-blue);
+  background-color: var(--dark-blue);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--blue);
+  max-width: 35rem;
+  padding: 2.4rem;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 1.4rem;
+
+  box-shadow: 0rem 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0rem 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.4);
+  transform: translateY(-10px);
+}
+
+.nft-img {
+  width: 30rem;
+  border-radius: 7px;
+  margin-bottom: 1.2rem;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+
+.description {
+  line-height: 1.5;
+  margin-bottom: 1.3rem;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nft,
+.time-period {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.nft-code {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--cyan);
+}
+
+.days-left {
+  font-size: 1.6rem;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--light-blue);
+  margin-bottom: 0.5rem;
+}
+
+.creator {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.6rem;
+  text-align: left;
+}
+
+.creator-img {
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  width: 3.3rem;
+}
+
+.creator-text {
+  font-size: 1.64rem;
+}
+
+.creator-name {
+  color: var(--white);
+}
+
+.attribution-link:link,
+.attribution-link:visited {
+  color: var(--light-blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--light-blue);
+  transition: all 0.3s;
+}
+
+.attribution-link:hover,
+.attribution-link:active {
+  color: var(--soft-blue);
+  border-bottom: none;
+}
+
+.attribution p {
+  color: var(--light-blue);
+  text-align: center;
+}
