@@ -172,11 +172,7 @@ body {
 
   .statistics {
     grid-template-columns: 1fr;
-    /* gap: 3rem; */
-  }
-
-  .statistics:nth-child(even) {
-    margin-bottom: 2rem;
+    grid-template-rows: repeat(6, 1fr);
   }
 
   .stat {
