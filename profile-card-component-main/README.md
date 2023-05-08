@@ -1,20 +1,21 @@
 # Frontend Mentor - Profile card component
 
-This is my solution for the ![Profile card component coding challenge](./design/desktop-preview.jpg)
+This is my solution for the [Profile card component coding challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
 
 ### Screenshot
 
-![1](https://user-images.githubusercontent.com/50435319/235429274-406e8fe2-0950-4f50-90d2-170f54b1f8eb.PNG)
+![1](https://user-images.githubusercontent.com/50435319/236750339-2318b791-3817-423d-ba36-1db531c32dec.PNG)
 
 ### Links
 
-- Solution URL: [Link](https://github.com/bhoamikhona/frontend-mentor-challenges/tree/main/stats-preview-card-component-main)
-- Live Site URL: [Link](https://bhoamikhona.github.io/frontend-mentor-challenges/stats-preview-card-component-main/index.html)
+- Solution URL: [Link](https://github.com/bhoamikhona/frontend-mentor-challenges/tree/main/profile-card-component-main)
+- Live Site URL: [Link](https://bhoamikhona.github.io/frontend-mentor-challenges/profile-card-component-main/index.html)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS
+- CSS Flexbox
 - CSS Grid
 
 ## Author
