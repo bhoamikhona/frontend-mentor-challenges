@@ -125,6 +125,16 @@ hr {
   letter-spacing: 0.15rem;
 }
 
+.stat-heading--followers {
+  grid-row: 2/3;
+}
+
+.stat-headding--likes {
+  grid-row: 2/3;
+}
+
+.stat-heading--photos {
+}
 .attribution {
   font-size: 1.2rem;
   color: var(--footer-link-blue);
