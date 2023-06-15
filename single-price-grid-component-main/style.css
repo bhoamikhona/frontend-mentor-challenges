@@ -140,7 +140,7 @@ li {
 /* 750px / 16px = 46.875 ~ 47em */
 @media (max-width: 47em) {
   body {
-    height: 100vh;
+    height: 100%;
     padding: 2rem 0;
 
     align-items: center;
