@@ -1,6 +1,6 @@
 # Frontend Mentor - 3-Column Preview Card Component
 
-This is my solution for [3-Column Preview Card Component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-).
+This is my solution for [Single Price Grid Component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc).
 
 ## Screenshot
 
