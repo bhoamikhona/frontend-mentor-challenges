@@ -42,7 +42,7 @@ body {
   font-family: var(--font-family);
   font-size: 1.8rem;
   font-weight: 500;
-  height: 100vh;
+  min-height: 100vh; /* This will make the page responsive */
   background-color: var(--white);
 
   display: flex;
@@ -59,8 +59,8 @@ body {
   border-radius: 3.2rem;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 36.8rem 36.8rem;
+  grid-template-rows: 51.2rem;
 }
 
 /* RESULTS */
@@ -251,12 +251,12 @@ body {
   body {
     font-size: 1.6rem;
     height: 100%;
-    width: 100%;
   }
 
   .card {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    width: 37.5rem;
+    grid-template-columns: 37.5rem;
+    grid-template-rows: 39rem 45.3rem;
   }
 
   /* RESULT */
@@ -308,5 +308,9 @@ body {
 
   .btn {
     width: 100%;
+  }
+
+  .attribution {
+    margin-bottom: 2rem;
   }
 }
