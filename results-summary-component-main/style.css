@@ -228,6 +228,9 @@ body {
 
 .attribution {
   color: var(--dark-gray-blue);
+
+  margin: 2rem;
+  text-align: center;
 }
 
 .attribution--link:link,
@@ -307,10 +310,5 @@ body {
 
   .btn {
     width: 100%;
-  }
-
-  .attribution {
-    margin: 2rem;
-    text-align: center;
   }
 }
