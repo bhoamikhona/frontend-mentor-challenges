@@ -49,7 +49,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
 }
 
 .card {
@@ -311,6 +310,7 @@ body {
   }
 
   .attribution {
-    margin-bottom: 2rem;
+    margin: 2rem;
+    text-align: center;
   }
 }
