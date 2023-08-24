@@ -43,7 +43,9 @@ body {
   border-radius: 2.25rem;
 
   color: var(--white);
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
 }
 
 .btn:hover {
@@ -71,8 +73,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-  /* justify-content: center; */
   flex-shrink: 0;
+  margin: 2rem;
 }
 
 .rate-card--icon-bg {
@@ -151,6 +153,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2rem;
 }
 
 .thank-you-illustration {
