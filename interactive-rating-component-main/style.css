@@ -1,0 +1,203 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --font-family: "Overpass", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  background-color: var(--very-dark-blue);
+  color: var(--light-grey);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+/* general */
+.btn {
+  width: 34.1rem;
+  height: 4.5rem;
+
+  background-color: var(--orange);
+  border: none;
+  border-radius: 2.25rem;
+
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* rate-card */
+.rate-card {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    hsl(215, 20%, 17%) 0%,
+    hsl(216, 24%, 12%) 100%
+  );
+  border-radius: 3rem;
+  width: 41.2rem;
+  height: 41.6rem;
+  padding: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* justify-content: center; */
+  flex-shrink: 0;
+}
+
+.rate-card--icon-bg {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 100%;
+  background-color: var(--dark-blue);
+  margin-bottom: 3rem;
+}
+
+.rate-card--heading {
+  color: var(--white);
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.rate-card--description {
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.ratings {
+  display: flex;
+  gap: 2.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.ratings label {
+  background-color: var(--dark-blue);
+  width: 5.1rem;
+  height: 5.1rem;
+  border-radius: 100%;
+  color: var(--medium-grey);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ratings input[type="radio"] {
+  display: none;
+}
+
+.ratings input[type="radio"]:hover + label {
+  background-color: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+}
+.ratings input[type="radio"]:checked + label {
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
+
+/* thank you card */
+
+.thank-you-card {
+  width: 41.2rem;
+  height: 41.6rem;
+  border-radius: 3rem;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    hsl(215, 20%, 17%) 0%,
+    hsl(216, 24%, 12%) 100%
+  );
+  padding: 3.2rem;
+
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-illustration {
+  width: 16.2rem;
+  height: 10.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.tag {
+  width: 19.3rem;
+  height: 3.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2.25rem;
+  background-color: var(--dark-blue);
+  color: var(--orange);
+  margin-bottom: 3.2rem;
+}
+
+.thank-you-card--heading {
+  color: var(--white);
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.thank-you-card--description {
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+/* footer */
+.attribution {
+  color: var(--medium-grey);
+}
+
+.attribution--link:link,
+.attribution--link:visited {
+  color: var(--medium-grey);
+  text-decoration: none;
+  border-bottom: 1px solid var(--medium-grey);
+}
+.attribution--link:hover,
+.attribution--link:active {
+  color: var(--orange);
+  border-bottom: none;
+}
