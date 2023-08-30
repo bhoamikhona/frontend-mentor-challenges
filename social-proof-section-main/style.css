@@ -331,6 +331,10 @@ main {
   text-decoration: none;
   border-bottom: 1px solid var(--very-dark-magenta);
   transition: 0.3s ease-in;
+
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .attribution--link:hover,
