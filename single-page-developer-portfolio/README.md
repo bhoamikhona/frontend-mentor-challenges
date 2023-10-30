@@ -8,8 +8,8 @@ This is my solution to the [Single Page Developer Portfolio](https://www.fronten
 
 ### Links
 
-- Solution URL: [Link]()
-- Live Site URL: [Link]()
+- Solution URL: [Link](https://github.com/bhoamikhona/frontend-mentor-challenges/tree/main/single-page-developer-portfolio)
+- Live Site URL: [Link](https://bhoamikhona.github.io/frontend-mentor-challenges/single-page-developer-portfolio/index.html)
 
 ### Built with
 
