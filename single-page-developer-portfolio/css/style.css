@@ -1,0 +1,308 @@
+/* Header Desktop */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header--wrapper {
+  width: 111rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.nav {
+  width: 100%;
+
+  padding-top: 3.9rem;
+  padding-right: 2.95rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--logo:link,
+.nav--logo:visited {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: -0.0444rem;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.nav--logo:hover,
+.nav--logo:active {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.nav--list {
+  list-style: none;
+  width: 19.2492rem;
+  height: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav--list-item {
+  height: 2.5rem;
+}
+
+.nav--link > svg > path {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav--link:hover > svg > path {
+  fill: var(--accent);
+}
+
+.nav--svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.hero--image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 44.5rem;
+}
+
+/* Hero Desktop */
+.hero {
+  position: relative;
+  margin-bottom: 23.1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero--wrapper {
+  width: 111rem;
+  position: relative;
+}
+
+.hero--rings {
+  position: absolute;
+  width: 53rem;
+  height: 12.9rem;
+  top: 6.2rem;
+  left: -24%;
+}
+
+.hero--circle {
+  position: absolute;
+  width: 12.9rem;
+  height: 12.9rem;
+  top: 30rem;
+  right: 38rem;
+}
+
+.hero--heading {
+  margin-top: 12.7rem;
+  margin-bottom: 4.3rem;
+  width: 70.6rem;
+}
+
+.name {
+  background-color: transparent;
+  color: var(--white);
+  border-bottom: 0.6rem solid var(--accent);
+}
+
+.about {
+  width: 44.5rem;
+  margin-bottom: 6.6rem;
+}
+
+/* Horizontal Rule after Hero - Desktop */
+.hero + hr {
+  margin-bottom: 7.2rem;
+}
+
+/* Skills - Desktop */
+.skills {
+  margin-bottom: 14rem;
+}
+
+.skills--wrapper {
+  width: 111rem;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 3.5rem;
+  row-gap: 5.8rem;
+}
+
+.skills--rings {
+  position: absolute;
+  bottom: -25%;
+  right: -37%;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.4rem;
+}
+
+.hr-after-skills {
+  display: none;
+}
+
+/* Projects Desktop */
+.projects {
+  margin-bottom: 13.9rem;
+}
+
+.projects--wrapper {
+  width: 111rem;
+}
+
+.heading-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8rem;
+}
+
+.projects--gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 2.42rem;
+  row-gap: 6.9rem;
+}
+
+.project--image {
+  margin-bottom: 2rem;
+  width: 54.5809rem;
+}
+
+.project--title {
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+.project--tech {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.project--links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+
+/* Contact Desktop */
+#contact {
+  position: relative;
+
+  padding-top: 8.4rem;
+  padding-bottom: 9.2rem;
+  /* margin-bottom: 9.2rem; */
+  width: 100%;
+  background-color: var(--dark-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact--wrapper {
+  width: 111rem;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 22rem;
+}
+
+.contact--heading {
+  margin-bottom: 3.6rem;
+}
+
+.contact--right {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.contact--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 3.2rem;
+}
+
+.contact--control {
+  position: relative;
+  width: 44.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.contact--rings {
+  position: absolute;
+
+  top: 25rem;
+  left: -28.5rem;
+}
+
+/* Footer Desktop */
+.footer {
+  background-color: var(--dark-grey);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer--wrapper {
+  width: 111rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer--wrapper > .nav {
+  padding-top: 4.7rem;
+  padding-bottom: 9.2rem;
+
+  padding-right: 0;
+
+  justify-self: center;
+}
