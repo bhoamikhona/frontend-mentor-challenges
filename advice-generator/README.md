@@ -4,12 +4,12 @@
 
 ## Screenshot
 
-![screenshot]()
+![screenshot](https://github.com/bhoamikhona/frontend-mentor-challenges/assets/50435319/29d5e8eb-9cc5-414e-9c36-29e2f0f01607)
 
 ## Links
 
-- [GitHub Repository]()
-- [View Live]()
+- [GitHub Repository](https://github.com/bhoamikhona/frontend-mentor-challenges/tree/main/advice-generator)
+- [View Live](https://advice-generator-eight-murex.vercel.app/)
 
 ## My Process
 
@@ -25,3 +25,7 @@
 - `fetch()`
 - Receiving data from a third-party API
 - `transform` property does not work on inline elements, you need to convert them to inline-block to make transform work
+
+## Author
+
+- [@bhoamikhona](https://github.com/bhoamikhona)
