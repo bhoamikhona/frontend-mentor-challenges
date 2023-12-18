@@ -1,0 +1,89 @@
+/* HEADER */
+.header {
+  width: 100%;
+  border-bottom: 0.1rem solid var(--white-op-2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .inner-wrapper {
+  height: 8.5rem;
+  padding-left: 3.2rem;
+  padding-right: 4.1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo:link,
+.logo:visited,
+.logo:hover,
+.logo:active {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--antonio);
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.105rem;
+  text-transform: uppercase;
+}
+
+.main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.3rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.active {
+  border-top: 0.4rem solid var(--mercury);
+  padding-top: 3.4rem;
+}
+
+/* MOBILE NAV */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.2s all ease;
+  display: none;
+}
+
+.btn-mobile-nav:hover > .icon-mobile-nav {
+  opacity: 0.2487;
+}
+
+.icon-mobile-nav {
+  width: 2.4rem;
+  height: 1.7rem;
+}
+
+.nav-bullet {
+  display: none;
+}
+
+/* MAIN */
+.main {
+  width: 100%;
+}

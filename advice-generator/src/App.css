@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap");
+
+:root {
+  --dark-blue: #202733;
+  --dark-grayish-blue: #313a48;
+  --neon-green: #53ffaa;
+  --light-cyan: #cee3e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+
+  background-color: var(--dark-blue);
+
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.card {
+  width: 54rem;
+  height: 33.2rem;
+  border-radius: 1.5rem;
+  background-color: var(--dark-grayish-blue);
+  box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.advice-num {
+  color: var(--neon-green);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.3457rem;
+  margin-bottom: 2.4rem;
+}
+
+.advice-message {
+  color: var(--light-cyan);
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.03rem;
+  width: 44.4rem;
+  margin-bottom: 4rem;
+}
+
+.divider {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: var(--neon-green);
+  border: none;
+  border-radius: 100%;
+  width: 6.4rem;
+  height: 6.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: -3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 25px var(--neon-green);
+}
+
+.attribution {
+  color: var(--light-cyan);
+  letter-spacing: 0.2rem;
+  width: 54rem;
+  text-align: center;
+  font-size: 1.2rem;
+
+  line-height: 2rem;
+}
+
+.attribution--link:link,
+.attribution--link:visited {
+  color: var(--neon-green);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.attribution--link:hover,
+.attribution--link:active {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  background-color: var(--neon-green);
+  box-shadow: 0 5px 25px var(--neon-green);
+  color: var(--dark-blue);
+  font-weight: 800;
+  transform: rotate(-5deg);
+}
+
+@media (max-width: 37.5em) {
+  .card {
+    width: 34.3rem;
+    height: 31.5rem;
+    border-radius: 1rem;
+    box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .advice-message {
+    font-size: 2.4rem;
+    letter-spacing: -0.0257rem;
+    margin-bottom: 2.4rem;
+    width: 29.5rem;
+  }
+
+  .attribution {
+    width: 34.3rem;
+  }
+}

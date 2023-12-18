@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=League+Spartan:wght@400;700&display=swap");
+
+:root {
+  --antonio: "Antonio", sans-serif;
+  --spartan: "League Spartan", sans-serif;
+
+  --white: #fff;
+  --white-op-1: rgba(255, 255, 255, 0.1);
+  --white-op-2: rgba(255, 255, 255, 0.2);
+
+  --background: #070724;
+  --mercury: #419ebb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--white);
+  font-family: var(--spartan);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+
+  background-color: var(--background);
+  background-image: url("../assets/background-stars.svg");
+  width: 100%;
+  /* border: 2px solid green; */
+}
+
+.h-xl {
+  color: var(--white);
+  font-family: var(--antonio);
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.h-lg {
+  color: var(--white);
+  font-family: var(--antonio);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+  text-transform: uppercase;
+}
+
+.h-md {
+  color: var(--white);
+  font-family: var(--spartan);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.2571rem;
+  text-transform: uppercase;
+}
+
+.h-sm {
+  color: var(--white);
+  font-family: var(--spartan);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+.inner-wrapper {
+  max-width: 144rem;
+  width: 100%;
+}
