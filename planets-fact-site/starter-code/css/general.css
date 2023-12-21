@@ -7,9 +7,11 @@
   --white: #fff;
   --white-op-1: rgba(255, 255, 255, 0.1);
   --white-op-2: rgba(255, 255, 255, 0.2);
+  --white-op-5: rgba(255, 255, 255, 0.5);
+  --white-op-75: rgba(255, 255, 255, 0.75);
 
   --background: #070724;
-  --mercury: #419ebb;
+  --accent: #419ebb;
 }
 
 * {
@@ -33,7 +35,6 @@ body {
   background-color: var(--background);
   background-image: url("../assets/background-stars.svg");
   width: 100%;
-  /* border: 2px solid green; */
 }
 
 .h-xl {
@@ -79,7 +80,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .inner-wrapper {

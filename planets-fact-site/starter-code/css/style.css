@@ -52,13 +52,15 @@
 .nav-link:link,
 .nav-link:visited {
   text-decoration: none;
+  color: var(--white-op-75);
 }
 
 .nav-link:hover,
 .nav-link:active,
 .active {
-  border-top: 0.4rem solid var(--mercury);
+  border-top: 0.4rem solid var(--accent);
   padding-top: 3.4rem;
+  color: var(--white);
 }
 
 /* MOBILE NAV */
@@ -86,4 +88,50 @@
 /* MAIN */
 .main {
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 16.5rem 5.6rem;
+}
+
+/* Main - Statistics */
+.statistics {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.stat {
+  width: 25.5rem;
+  height: 12.8rem;
+
+  padding-top: 2rem;
+  padding-left: 2.3rem;
+
+  border: 1px solid var(--white-op-2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-shrink: 0;
+  gap: 0.4rem;
+
+  transition: all 0.5s ease;
+}
+
+.stat-title {
+  color: var(--white-op-5);
 }
