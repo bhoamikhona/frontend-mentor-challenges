@@ -146,41 +146,115 @@
     </header>
     <main class="main">
       <div class="inner-wrapper">
-        <!-- <h1>Mercury</h1> -->
-
-        <!-- Overview Content Start -->
-
-        <!-- Mercury is the smallest planet in the Solar System and the closest to
-        the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest
-        of all the Sun's planets. Mercury is one of four terrestrial planets in
-        the Solar System, and is a rocky body like Earth. Source : Wikipedia -->
-        <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
-
-        <!-- Overview Content End -->
-
-        <!-- Internal Structure Content Start -->
-
-        <!-- Mercury appears to have a solid silicate crust and mantle overlying a
-        solid, iron sulfide outer core layer, a deeper liquid core layer, and a
-        solid inner core. The planet's density is the second highest in the
-        Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
-        Source : Wikipedia -->
-        <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure -->
-
-        <!-- Internal Structure Content End -->
-
-        <!-- Surface Geology Content Start -->
-
-        <!-- Mercury's surface is similar in appearance to that of the Moon, showing
-        extensive mare-like plains and heavy cratering, indicating that it has
-        been geologically inactive for billions of years. It is more
-        heterogeneous than either Mars's or the Moon’s. Source : Wikipedia -->
-        <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology -->
-
-        <!-- Surface Geology Content End -->
-
-        <!-- 01 Overview 02 Internal Structure 03 Surface Geology Rotation Time 58.6
-        Days Revolution Time 87.97 Days Radius 2,439.7 KM Average Temp. 430°c -->
+        <div class="planet">
+          <div class="planet-img-box">
+            <img
+              src="./assets/planet-mercury.svg"
+              alt="Planet Mercury"
+              class="planet-img img-overview"
+            />
+            <img
+              src="./assets/planet-mercury-internal.svg"
+              alt="Mercury's Internal Structure"
+              class="planet-img img-internal hidden"
+            />
+            <img
+              src="./assets/geology-mercury.png"
+              alt="Mercury's Surface Geology"
+              class="planet-img img-surface hidden"
+            />
+          </div>
+          <div class="planet-info">
+            <div class="about">
+              <h1 class="planet-name h-xl">Mercury</h1>
+              <div class="overview">
+                <p class="planet-desc">
+                  Mercury is the smallest planet in the Solar System and the
+                  closest to the Sun. Its orbit around the Sun takes 87.97 Earth
+                  days, the shortest of all the Sun's planets. Mercury is one of
+                  four terrestrial planets in the Solar System, and is a rocky
+                  body like Earth.
+                </p>
+                <p class="source">
+                  Source:
+                  <a
+                    class="source-link"
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Mercury_(planet)"
+                    >Wikipedia</a
+                  >
+                  <img
+                    class="source-img"
+                    src="./assets/icon-source.svg"
+                    alt="source icon"
+                  />
+                </p>
+              </div>
+              <div class="internal hidden">
+                <p class="planet-desc">
+                  Mercury appears to have a solid silicate crust and mantle
+                  overlying a solid, iron sulfide outer core layer, a deeper
+                  liquid core layer, and a solid inner core. The planet's
+                  density is the second highest in the Solar System at 5.427
+                  g/cm3 , only slightly less than Earth's density.
+                </p>
+                <p class="source">
+                  Source:
+                  <a
+                    class="source-link"
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
+                    >Wikipedia</a
+                  >
+                  <img
+                    class="source-img"
+                    src="./assets/icon-source.svg"
+                    alt="source icon"
+                  />
+                </p>
+              </div>
+              <div class="surface hidden">
+                <p class="planet-desc">
+                  Mercury's surface is similar in appearance to that of the
+                  Moon, showing extensive mare-like plains and heavy cratering,
+                  indicating that it has been geologically inactive for billions
+                  of years. It is more heterogeneous than either Mars's or the
+                  Moon’s.
+                </p>
+                <p class="source">
+                  Source:
+                  <a
+                    class="source-link"
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"
+                    >Wikipedia</a
+                  >
+                  <img
+                    class="source-img"
+                    src="./assets/icon-source.svg"
+                    alt="source icon"
+                  />
+                </p>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="btn h-md btn-active btn-overview">
+                <span class="btn-num">01</span>
+                <span class="btn-title">Overview</span>
+              </button>
+              <button class="btn h-md btn-internal">
+                <span class="btn-num">02</span>
+                <span class="btn-title long">Internal Structure</span>
+                <span class="btn-title short">Structure</span>
+              </button>
+              <button class="btn h-md btn-surface">
+                <span class="btn-num">03</span>
+                <span class="btn-title long">Surface Geology</span>
+                <span class="btn-title short">Surface</span>
+              </button>
+            </div>
+          </div>
+        </div>
         <section class="statistics">
           <div class="stat">
             <h2 class="stat-title h-sm">Rotation Time</h2>

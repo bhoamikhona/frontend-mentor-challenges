@@ -11,7 +11,19 @@
   --white-op-75: rgba(255, 255, 255, 0.75);
 
   --background: #070724;
+
   --accent: #419ebb;
+
+  --mercury: #419ebb;
+  --venus: #eda249;
+  --earth: #6d2ed5;
+  --mars: #d14c32;
+  --jupiter: #d83a34;
+  --saturn: #cd5120;
+  --uranus: #1ec1a2;
+  --netune: #2d68f0;
+
+  --btn-hover: rgba(216, 216, 216, 0.2);
 }
 
 * {
@@ -54,6 +66,7 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.15rem;
+  line-height: normal;
   text-transform: uppercase;
 }
 

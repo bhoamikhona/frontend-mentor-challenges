@@ -60,7 +60,7 @@
 .active {
   border-top: 0.4rem solid var(--accent);
   padding-top: 3.4rem;
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 /* MOBILE NAV */
@@ -101,6 +101,118 @@
   align-items: center;
 
   padding: 0 16.5rem 5.6rem;
+}
+
+/* Planet */
+
+.planet {
+  display: grid;
+  grid-template-columns: 76rem 35rem;
+  grid-template-rows: auto;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 12.6rem;
+  padding-bottom: 8.7rem;
+}
+
+.planet-img-box {
+  justify-self: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-overview,
+.img-internal {
+  object-position: center;
+}
+
+.img-surface {
+  height: 19.9rem;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.planet-info {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+
+.planet-name {
+  margin-bottom: 2.3rem;
+}
+
+.planet-desc {
+  margin-bottom: 2.4rem;
+}
+
+.source {
+  margin-bottom: 3.9rem;
+  color: var(--white-op-5);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.source-link:link,
+.source-link:visited {
+  color: var(--white-op-5);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.btn {
+  width: 35rem;
+  height: 4.8rem;
+  border: 1px solid var(--white-op-2);
+
+  background-color: var(--background);
+
+  padding-left: 2.8rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.8rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-title.short {
+  display: none;
+}
+
+.btn-num {
+  color: var(--white-op-5);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--btn-hover);
+}
+
+.btn-active {
+  background-color: var(--accent);
+}
+
+.btn-active:hover {
+  background-color: var(--accent);
 }
 
 /* Main - Statistics */
