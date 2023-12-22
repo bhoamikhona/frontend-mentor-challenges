@@ -53,12 +53,15 @@
 .nav-link:visited {
   text-decoration: none;
   color: var(--white-op-75);
+  padding-top: 3.4rem;
+  border-top: 0.4rem solid transparent;
+  transition: 0.2s ease-in-out;
 }
 
 .nav-link:hover,
 .nav-link:active,
 .active {
-  border-top: 0.4rem solid var(--accent);
+  border-top: 0.4rem solid var(--accent) !important;
   padding-top: 3.4rem;
   color: var(--white) !important;
 }
