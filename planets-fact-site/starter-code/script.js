@@ -29,37 +29,30 @@ btnMobileMenu.addEventListener(`click`, function () {
   main.classList.toggle("hidden");
 });
 
-// Content Event Listeners
-btnOverview.addEventListener(`click`, function () {
+// Updating Content Based on Button Clicks
+function updateView(btn, el, img, imgOverview) {
   for (let i = 0; i < 3; i++) {
     btns[i].classList.remove(`btn-active`);
     elements[i].classList.add(`hidden`);
     imgs[i].classList.add(`hidden`);
   }
-  btnOverview.classList.add(`btn-active`);
-  elOverview.classList.remove(`hidden`);
-  imgOverview.classList.remove(`hidden`);
+  btn.classList.add(`btn-active`);
+  el.classList.remove(`hidden`);
+  img.classList.remove(`hidden`);
+
+  if (btn === btnSurface) {
+    imgOverview.classList.remove(`hidden`);
+  }
+}
+
+btnOverview.addEventListener(`click`, function () {
+  updateView(btnOverview, elOverview, imgOverview);
 });
 
 btnInternal.addEventListener(`click`, function () {
-  for (let i = 0; i < 3; i++) {
-    btns[i].classList.remove(`btn-active`);
-    elements[i].classList.add(`hidden`);
-    imgs[i].classList.add(`hidden`);
-  }
-  btnInternal.classList.add(`btn-active`);
-  elInternal.classList.remove(`hidden`);
-  imgInternal.classList.remove(`hidden`);
+  updateView(btnInternal, elInternal, imgInternal);
 });
 
 btnSurface.addEventListener(`click`, function () {
-  for (let i = 0; i < 3; i++) {
-    btns[i].classList.remove(`btn-active`);
-    elements[i].classList.add(`hidden`);
-    imgs[i].classList.add(`hidden`);
-  }
-  btnSurface.classList.add(`btn-active`);
-  elSurface.classList.remove(`hidden`);
-  imgOverview.classList.remove(`hidden`);
-  imgSurface.classList.remove(`hidden`);
+  updateView(btnSurface, elSurface, imgSurface, imgOverview);
 });
