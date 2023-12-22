@@ -60,8 +60,10 @@
 
 .nav-link:hover,
 .nav-link:active,
-.active {
-  border-top: 0.4rem solid var(--accent) !important;
+.active,
+.active:link,
+.active:visited {
+  border-top: 0.4rem solid var(--accent);
   padding-top: 3.4rem;
   color: var(--white) !important;
 }

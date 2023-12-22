@@ -1,62 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Uranus
+    <link
+      rel="shortcut icon"
+      href="./assets/solar-system.png"
+      type="image/x-icon"
+    />
 
-  <!-- Overview Content Start -->
+    <title>Planets fact site | Uranus</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
 
-  Uranus is the seventh planet from the Sun. Its name is a reference to the 
-  Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather 
-  of Ares. It has the third-largest planetary radius and fourth-largest planetary 
-  mass in the Solar System.
+    <style>
+      :root {
+        --accent: #1ec1a2;
+      }
+      @media (max-width: 76.8em) {
+        .planet {
+          margin-top: 9.3rem;
+          gap: 7.7rem;
+        }
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus -->
+        .img-overview,
+        .img-internal {
+          height: 29rem;
+        }
+      }
 
-  <!-- Overview Content End -->
+      @media (max-width: 37.5em) {
+        .planet {
+          margin-top: 11.4rem;
+          gap: 6.5rem;
+        }
 
-  <!-- Internal Structure Content Start -->
+        .img-overview,
+        .img-internal {
+          height: 17.6rem;
+        }
+      }
+    </style>
 
-  The standard model of Uranus's structure is that it consists of three layers: a 
-  rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and 
-  an outer gaseous hydrogen/helium envelope. The core is relatively small, with a 
-  mass of only 0.55 Earth masses.
+    <script defer src="./script.js"></script>
+  </head>
+  <body class="">
+    <header class="header">
+      <div class="inner-wrapper">
+        <nav class="main-nav">
+          <div class="nav-logo">
+            <a href="./index.html" class="logo">The Planets</a>
+          </div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus#Internal_structure -->
+          <ul class="nav-list">
+            <li class="nav-list--item">
+              <svg
+                class="nav-bullet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <circle cx="10" cy="10" r="10" fill="#DEF4FC" />
+              </svg>
+              <a href="./index.html" class="nav-link h-sm">Mercury</a>
+            </li>
+            <li class="nav-list--item">
+              <svg
+                class="nav-bullet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <circle cx="10" cy="10" r="10" fill="#F7CC7F" />
+              </svg>
+              <a href="./venus.html" class="nav-link h-sm">Venus</a>
+            </li>
+            <li class="nav-list--item">
+              <svg
+                class="nav-bullet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <circle cx="10" cy="10" r="10" fill="#545BFE" />
+              </svg>
+              <a href="./earth.html" class="nav-link h-sm">Earth</a>
+            </li>
+            <li class="nav-list--item">
+              <svg
+                class="nav-bullet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <circle cx="10" cy="10" r="10" fill="#FF6A45" />
+              </svg>
+              <a href="./mars.html" class="nav-link h-sm">Mars</a>
+            </li>
+            <li class="nav-list--item">
+              <svg
+                class="nav-bullet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <circle cx="10" cy="10" r="10" fill="#ECAD7A" />
+              </svg>
+              <a href="./jupiter.html" class="nav-link h-sm">Jupiter</a>
+            </li>
+            <li class="nav-list--item">
+              <svg
+                class="nav-bullet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <circle cx="10" cy="10" r="10" fill="#FCCB6B" />
+              </svg>
+              <a href="./saturn.html" class="nav-link h-sm">Saturn</a>
+            </li>
+            <li class="nav-list--item">
+              <svg
+                class="nav-bullet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <circle cx="10" cy="10" r="10" fill="#65F0D5" />
+              </svg>
+              <a href="./uranus.html" class="nav-link h-sm active">Uranus</a>
+            </li>
+            <li class="nav-list--item">
+              <svg
+                class="nav-bullet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <circle cx="10" cy="10" r="10" fill="#497EFA" />
+              </svg>
+              <a href="./neptune.html" class="nav-link h-sm">Neptune</a>
+            </li>
+          </ul>
+        </nav>
 
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  The composition of Uranus's atmosphere is different from its bulk, consisting mainly 
-  of molecular hydrogen and helium. The helium molar fraction, i.e. the number of 
-  helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus#Atmosphere -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  17.2 Hours
-
-  Revolution Time
-  84 Years
-
-  Radius
-  25,362 KM
-
-  Average Temp.
-  -195°c
-</body>
+        <button class="btn-mobile-nav">
+          <img
+            class="icon-mobile-nav"
+            src="./assets/icon-hamburger.svg"
+            alt="mobile menu icon"
+            role="button"
+          />
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="inner-wrapper">
+        <div class="planet">
+          <div class="planet-img-box">
+            <img
+              src="./assets/planet-uranus.svg"
+              alt="Planet Uranus"
+              class="planet-img img-overview"
+            />
+            <img
+              src="./assets/planet-uranus-internal.svg"
+              alt="Uranus' Internal Structure"
+              class="planet-img img-internal hidden"
+            />
+            <img
+              src="./assets/geology-uranus.png"
+              alt="Uranus' Surface Geology"
+              class="planet-img img-surface hidden"
+            />
+          </div>
+          <div class="planet-info">
+            <div class="about">
+              <h1 class="planet-name h-xl">Uranus</h1>
+              <div class="overview">
+                <p class="planet-desc">
+                  Uranus is the seventh planet from the Sun. Its name is a
+                  reference to the Greek god of the sky, Uranus according to
+                  Greek mythology, was the great-grandfather of Ares. It has the
+                  third-largest planetary radius and fourth-largest planetary
+                  mass in the Solar System.
+                </p>
+                <p class="source">
+                  Source:
+                  <a
+                    class="source-link"
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Uranus"
+                    >Wikipedia</a
+                  >
+                  <img
+                    class="source-img"
+                    src="./assets/icon-source.svg"
+                    alt="source icon"
+                  />
+                </p>
+              </div>
+              <div class="internal hidden">
+                <p class="planet-desc">
+                  The standard model of Uranus's structure is that it consists
+                  of three layers: a rocky (silicate/iron–nickel) core in the
+                  centre, an icy mantle in the middle and an outer gaseous
+                  hydrogen/helium envelope. The core is relatively small, with a
+                  mass of only 0.55 Earth masses.
+                </p>
+                <p class="source">
+                  Source:
+                  <a
+                    class="source-link"
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Uranus#Internal_structure"
+                    >Wikipedia</a
+                  >
+                  <img
+                    class="source-img"
+                    src="./assets/icon-source.svg"
+                    alt="source icon"
+                  />
+                </p>
+              </div>
+              <div class="surface hidden">
+                <p class="planet-desc">
+                  The composition of Uranus's atmosphere is different from its
+                  bulk, consisting mainly of molecular hydrogen and helium. The
+                  helium molar fraction, i.e. the number of helium atoms per
+                  molecule of gas, is 0.15±0.03 in the upper troposphere.
+                </p>
+                <p class="source">
+                  Source:
+                  <a
+                    class="source-link"
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Uranus#Atmosphere"
+                    >Wikipedia</a
+                  >
+                  <img
+                    class="source-img"
+                    src="./assets/icon-source.svg"
+                    alt="source icon"
+                  />
+                </p>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="btn h-md btn-active btn-overview">
+                <span class="btn-num">01</span>
+                <span class="btn-title">Overview</span>
+              </button>
+              <button class="btn h-md btn-internal">
+                <span class="btn-num">02</span>
+                <span class="btn-title long">Internal Structure</span>
+                <span class="btn-title short">Structure</span>
+              </button>
+              <button class="btn h-md btn-surface">
+                <span class="btn-num">03</span>
+                <span class="btn-title long">Surface Geology</span>
+                <span class="btn-title short">Surface</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <section class="statistics">
+          <div class="stat">
+            <h2 class="stat-title h-sm">Rotation Time</h2>
+            <span class="stat-value h-lg">17.2 Hours</span>
+          </div>
+          <div class="stat">
+            <h2 class="stat-title h-sm">Revolution Time</h2>
+            <span class="stat-value h-lg">84 Years</span>
+          </div>
+          <div class="stat">
+            <h2 class="stat-title h-sm">Radius</h2>
+            <span class="stat-value h-lg">25,362 KM</span>
+          </div>
+          <div class="stat">
+            <h2 class="stat-title h-sm">Average Temp.</h2>
+            <span class="stat-value h-lg">-195&deg;C</span>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

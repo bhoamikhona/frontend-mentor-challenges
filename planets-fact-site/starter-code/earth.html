@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      rel="shortcut icon"
+      href="./assets/solar-system.png"
+      type="image/x-icon"
     />
 
-    <title>Frontend Mentor | Planets fact site</title>
+    <title>Planets fact site | Earth</title>
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/queries.css" />
@@ -19,6 +18,30 @@
     <style>
       :root {
         --accent: #6d2ed5;
+      }
+
+      @media (max-width: 76.8em) {
+        .planet {
+          margin-top: 9.6rem;
+          gap: 7.9rem;
+        }
+
+        .img-overview,
+        .img-internal {
+          height: 28.5rem;
+        }
+      }
+
+      @media (max-width: 37.5em) {
+        .planet {
+          margin-top: 11.5rem;
+          gap: 6.7rem;
+        }
+
+        .img-overview,
+        .img-internal {
+          height: 17.3rem;
+        }
       }
     </style>
 

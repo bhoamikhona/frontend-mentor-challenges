@@ -18,10 +18,15 @@
     margin-bottom: 3.9rem;
   }
 
+  .nav-link:link,
+  .nav-link:visited,
   .nav-link:hover,
   .nav-link:active,
-  .active {
+  .active,
+  .active:link,
+  .active:visited {
     border: none;
+    padding: 0;
   }
 
   /* Tablet - Main */
