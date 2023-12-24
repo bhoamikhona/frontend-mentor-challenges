@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --dark-navy: #242742;
+  --dark-navy-5: rgba(36, 39, 66, 0.5);
+  --white: #ffffff;
+  --gradient: linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%);
+  --grey-25: rgba(25, 24, 43, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+  font-feature-settings: "clig" off, "liga" off;
+  color: var(--dark-navy);
+
+  background-color: var(--dark-navy);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General */
+.card {
+  background-color: var(--white);
+  border-radius: 3.6rem;
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+  width: 100%;
+  height: 5.6rem;
+  border-radius: 0.8rem;
+  background-color: var(--dark-navy);
+  text-align: center;
+  color: var(--white);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Roboto" sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: var(--gradient);
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
+/* Signup */
+
+.card--signup {
+  width: 92.8rem;
+  height: 64.1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.signup__left {
+  padding: 9.7rem 0 9.8rem 6.4rem;
+}
+
+.signup__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: left;
+}
+
+.signup__heading {
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  font-feature-settings: "clig" off, "liga" off;
+  margin-bottom: 2.4rem;
+}
+
+.signup__message {
+  margin-bottom: 2.4rem;
+}
+
+.signup__list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+
+  margin-bottom: 4.1rem;
+}
+
+.signup__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.signup__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.signup__label {
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.signup__input {
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 1px solid var(--grey-25);
+  height: 5.6rem;
+  padding: 1.6rem 2.4rem;
+  margin-bottom: 2.4rem;
+  cursor: pointer;
+}
+
+.signup__input::placeholder {
+  color: var(--dark-navy-5);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Roboto" sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.signup__right {
+  padding: 2.4rem 2.4rem 2.4rem 0;
+}
+
+.signup__img-box {
+  height: 59.3rem;
+}
+
+.signup__img {
+  height: 100%;
+}
+
+/* Success */
