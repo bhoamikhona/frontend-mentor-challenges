@@ -1,19 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ThemeToggle.css";
 import { ReactComponent as Moon } from "../../assets/images/icon-moon.svg";
 
 const ThemeToggle = function () {
-  const setDarkMode = function () {
-    document.querySelector("body").setAttribute("theme-choice", "dark");
-  };
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const setLightMode = function () {
-    document.querySelector("body").setAttribute("theme-choice", "light");
-  };
-
-  const toggleTheme = function (e) {
-    if (e.target.checked) setDarkMode();
-    else setLightMode();
+  const toggleTheme = function () {
+    const themeChoice = isDarkMode ? "light" : "dark";
+    document.body.setAttribute("theme-choice", themeChoice);
+    setIsDarkMode(!isDarkMode);
   };
 
   return (
@@ -22,11 +17,14 @@ const ThemeToggle = function () {
         className="theme-toggle__input"
         type="checkbox"
         id="theme-toggle"
+        checked={isDarkMode}
         onChange={toggleTheme}
+        defaultChecked={localStorage.getItem("theme-choice")}
       />
       <label className="theme-toggle__label" htmlFor="theme-toggle"></label>
       <Moon className="moon-icon" />
     </div>
   );
 };
+
 export default ThemeToggle;
