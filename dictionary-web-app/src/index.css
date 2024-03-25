@@ -19,12 +19,12 @@
 
   --font: "Inter", sans-serif;
 
-  --moon: #757575;
-  --dropdown-bg: #ffffff;
-  --dropdown-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
-
   --primary-bg: #ffffff;
   --primary-text: #2d2d2d;
+  --dropdown-bg: #ffffff;
+  --dropdown-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  --moon: #757575;
+  --search-bg: #f4f4f4;
 }
 
 [font-choice="serif"] {
@@ -36,12 +36,12 @@
 }
 
 [theme-choice="dark"] {
-  --moon: #a445ed;
-  --dropdown-bg: #1f1f1f;
-  --dropdown-shadow: 0 5px 30px 0 #a445ed;
-
   --primary-bg: #050505;
   --primary-text: #ffffff;
+  --dropdown-bg: #1f1f1f;
+  --dropdown-shadow: 0 5px 30px 0 #a445ed;
+  --moon: #a445ed;
+  --search-bg: #1f1f1f;
 }
 
 * {
@@ -89,4 +89,8 @@ body {
 .b-sm {
   font-size: 1.4rem;
   line-height: 1.7rem;
+}
+
+.hidden {
+  display: none;
 }

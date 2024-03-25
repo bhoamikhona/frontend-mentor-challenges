@@ -19,7 +19,6 @@ const ThemeToggle = function () {
         id="theme-toggle"
         checked={isDarkMode}
         onChange={toggleTheme}
-        defaultChecked={localStorage.getItem("theme-choice")}
       />
       <label className="theme-toggle__label" htmlFor="theme-toggle"></label>
       <Moon className="moon-icon" />
