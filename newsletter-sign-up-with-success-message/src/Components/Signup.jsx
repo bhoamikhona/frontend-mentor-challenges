@@ -40,16 +40,21 @@ const Signup = () => {
             </li>
           </ul>
           <form className="signup__form">
-            <label htmlFor="emai" className="signup__label">
-              Email address
-            </label>
+            <div className="form-labels">
+              <label htmlFor="email" className="signup__label">
+                Email address
+              </label>
+              <label htmlFor="email" className="signup__label--error">
+                Valid email required
+              </label>
+            </div>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="email@company.com"
+              className="signup__input error"
               autoComplete="off"
-              className="signup__input"
             />
             <input
               type="submit"

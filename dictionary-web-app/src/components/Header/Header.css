@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  height: 3.65rem;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+}
+
+.nav__left {
+  height: 100%;
+}
+
+.logo__container {
+  height: 100%;
+}
+
+.logo {
+  height: 100%;
+}
+
+.nav__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.decorative-vertical-line {
+  height: 3.2rem;
+  border: none;
+  border-left: 1px solid var(--grey-6);
+}

@@ -1,0 +1,50 @@
+.theme-toggle__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.theme-toggle__input {
+  /* width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0; */
+  display: none;
+}
+
+.theme-toggle__label {
+  width: 4rem;
+  height: 2rem;
+  position: relative;
+  display: block;
+  background: var(--grey-5);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle__label:after {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  position: absolute;
+  top: 0.3rem;
+  left: 0.2rem;
+  background: var(--white);
+  border-radius: 18rem;
+  transition: 0.3s;
+}
+
+.theme-toggle__input:checked + .theme-toggle__label {
+  background: var(--accent);
+}
+
+.theme-toggle__input:checked + .theme-toggle__label:after {
+  left: 3.77rem;
+  transform: translateX(-100%);
+}
+
+.moon-icon {
+  stroke: var(--moon);
+}
