@@ -22,8 +22,8 @@ function ResultBody({ partOfSpeech, definitions, synonyms }) {
         <div className="result-body__synonym-container">
           <h3 className="result-body__sub-heading">Synonyms</h3>
           <div className="result-body__synonym-wrapper">
-            {synonyms.map((syn) => (
-              <span className="result-body__synonym h-sm">
+            {synonyms.map((syn, index) => (
+              <span key={index} className="result-body__synonym h-sm">
                 {syn}
                 {synonyms.length > 1 &&
                   synonyms.indexOf(syn) !== synonyms.length - 1 && (
