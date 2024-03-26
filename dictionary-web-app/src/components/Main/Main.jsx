@@ -6,26 +6,26 @@ import NotFound from "../NotFound/NotFound.jsx";
 import DisplayResult from "../DisplayResult/DisplayResult.jsx";
 
 function Main() {
-  const [word, setWord] = useState("keyboard");
+  const [word, setWord] = useState("");
   const [error, setError] = useState(false);
   const [wordNotFound, setWordNotFound] = useState(false);
 
+  const [data, setData] = useState([]);
+
   const getData = async function () {
     try {
+      console.log("word", word);
       const response = await axios.get(
         `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
       );
 
-      console.log("response", response);
-
-      const data = response.data;
-      console.log("response.data", data);
-
-      const status = response.status;
-      console.log("response.status", status);
+      console.log("response", response.data[0]);
 
       setError(false);
       setWordNotFound(false);
+
+      setData(() => response.data[0]);
+      console.log("data", data);
     } catch (error) {
       console.log(error);
       setWordNotFound(true);
@@ -46,10 +46,6 @@ function Main() {
       getData();
     }
   };
-
-  useEffect(() => {
-    getData();
-  }, []);
 
   return (
     <form className={`form ${error ? "error" : ""}`}>
@@ -81,7 +77,7 @@ function Main() {
         <span className="error-label h-sm">Whoops, can't be empty...</span>
       )}
 
-      {wordNotFound ? <NotFound /> : <DisplayResult />}
+      {wordNotFound ? <NotFound /> : <DisplayResult data={data} />}
     </form>
   );
 }

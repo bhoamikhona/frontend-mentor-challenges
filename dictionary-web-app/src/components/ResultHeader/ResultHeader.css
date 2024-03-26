@@ -1,0 +1,49 @@
+.result-header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-header__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.result-header__pronounce {
+  color: var(--accent);
+}
+
+.result-header__right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.play-icon {
+  fill: #a445ed;
+  cursor: pointer;
+}
+
+.play-icon:hover g {
+  fill: #fff;
+}
+
+.play-icon:hover circle {
+  fill: #a445ed;
+  opacity: 1;
+}
