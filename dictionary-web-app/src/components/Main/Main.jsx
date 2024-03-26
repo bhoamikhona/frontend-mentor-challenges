@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Main.css";
 import axios from "axios";
 import { ReactComponent as SearchIcon } from "../../assets/images/icon-search.svg";
@@ -62,15 +62,13 @@ function Main() {
           onChange={handleChange}
           autoComplete="off"
         />
-        <span>
-          <SearchIcon className="search-icon" />
-        </span>
+
         <button
           onClick={handleSubmit}
           type="submit"
           className="form__submit-btn"
         >
-          submit
+          <SearchIcon className="search-icon" />
         </button>
       </div>
       {error && (

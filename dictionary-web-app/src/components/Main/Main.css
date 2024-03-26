@@ -36,15 +36,20 @@
   border: 1px solid var(--accent);
 }
 
-.search-icon {
+.form__submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   right: 3.5%;
+  right: 0;
   transform: translateY(-50%);
-}
-
-.form__submit-btn {
-  display: none;
+  height: 100%;
+  width: 6.4rem;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .form.error .form__input[type="text"] {
