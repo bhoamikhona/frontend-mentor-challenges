@@ -2,6 +2,7 @@ import React from "react";
 import "./DisplayResult.css";
 import ResultHeader from "../ResultHeader/ResultHeader.jsx";
 import ResultBody from "../ResultBody/ResultBody.jsx";
+import ResultSource from "../ResultSource/ResultSource.jsx";
 
 function DisplayResult({ data }) {
   return (
@@ -10,6 +11,9 @@ function DisplayResult({ data }) {
 
       {data?.meanings &&
         data.meanings.map((content) => <ResultBody {...content} />)}
+
+      <hr className="hr" />
+      <ResultSource source={data?.sourceUrls[0]} />
     </section>
   );
 }

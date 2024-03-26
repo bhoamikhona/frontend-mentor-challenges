@@ -1,0 +1,26 @@
+.result-source {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.result-source__link:link,
+.result-source__link:visited,
+.result-source__link:hover,
+.result-source__link:active {
+  color: var(--grey-5);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.result-source__heading {
+  margin-right: 2rem;
+  font-weight: normal;
+}
+
+.result-source__link-address {
+  color: var(--primary-text);
+  margin-right: 0.5rem;
+}
