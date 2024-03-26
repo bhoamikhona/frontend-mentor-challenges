@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ThemeToggle.css";
 import { ReactComponent as Moon } from "../../assets/images/icon-moon.svg";
 
 const ThemeToggle = function () {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const storedTheme = localStorage.getItem("theme");
+    const prefersDarkMode =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return storedTheme === "dark" || (storedTheme === null && prefersDarkMode);
+  });
+
+  useEffect(() => {
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+    document.body.setAttribute("theme-choice", isDarkMode ? "dark" : "light");
+  }, [isDarkMode]);
 
   const toggleTheme = function () {
-    const themeChoice = isDarkMode ? "light" : "dark";
-    document.body.setAttribute("theme-choice", themeChoice);
     setIsDarkMode(!isDarkMode);
   };
 
