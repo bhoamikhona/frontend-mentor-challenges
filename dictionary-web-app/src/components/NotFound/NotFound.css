@@ -1,0 +1,27 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  text-align: center;
+
+  margin-top: 10rem;
+}
+
+.emoji-container {
+  height: 6.4rem;
+  width: 6.4rem;
+  margin-bottom: 1rem;
+}
+
+.emoji {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.not-found__message {
+  color: var(--grey-5);
+}

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import "./Form.css";
+import "./Main.css";
 import axios from "axios";
 import { ReactComponent as SearchIcon } from "../../assets/images/icon-search.svg";
+import NotFound from "../NotFound/NotFound.jsx";
+import DisplayResult from "../DisplayResult/DisplayResult.jsx";
 
-function Form() {
+function Main() {
   const [word, setWord] = useState("keyboard");
   const [error, setError] = useState(false);
   const [wordNotFound, setWordNotFound] = useState(false);
@@ -23,6 +25,7 @@ function Form() {
       console.log("response.status", status);
 
       setError(false);
+      setWordNotFound(false);
     } catch (error) {
       console.log(error);
       setWordNotFound(true);
@@ -77,8 +80,10 @@ function Form() {
       {error && (
         <span className="error-label h-sm">Whoops, can't be empty...</span>
       )}
+
+      {wordNotFound ? <NotFound /> : <DisplayResult />}
     </form>
   );
 }
 
-export default Form;
+export default Main;
