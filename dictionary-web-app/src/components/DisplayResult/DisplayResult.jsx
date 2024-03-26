@@ -7,7 +7,9 @@ function DisplayResult({ data }) {
   return (
     <section className="display-result">
       <ResultHeader data={data} />
-      <ResultBody data={data} />
+
+      {data?.meanings &&
+        data.meanings.map((content) => <ResultBody {...content} />)}
     </section>
   );
 }
