@@ -7,13 +7,19 @@ import ResultSource from "../ResultSource/ResultSource.jsx";
 function DisplayResult({ data }) {
   return (
     <section className="display-result">
-      <ResultHeader data={data} />
+      {data && <ResultHeader data={data} />}
 
       {data?.meanings &&
-        data.meanings.map((content) => <ResultBody {...content} />)}
+        data.meanings.map((content, index) => (
+          <ResultBody key={index} {...content} />
+        ))}
 
-      <hr className="hr" />
-      <ResultSource source={data?.sourceUrls[0]} />
+      {data.sourceUrls && (
+        <>
+          <hr className="hr" />
+          <ResultSource source={data.sourceUrls?.[0]} />
+        </>
+      )}
     </section>
   );
 }

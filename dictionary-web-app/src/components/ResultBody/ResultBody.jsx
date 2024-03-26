@@ -11,8 +11,10 @@ function ResultBody({ partOfSpeech, definitions, synonyms }) {
       <div className="result-body__list-container">
         <h3 className="result-body__sub-heading h-sm">Meaning</h3>
         <ul className="result-body__list">
-          {definitions.map((def) => (
-            <li className="result-body__list-item">{def.definition}</li>
+          {definitions.map((def, index) => (
+            <li key={index} className="result-body__list-item">
+              {def.definition}
+            </li>
           ))}
         </ul>
       </div>
@@ -29,9 +31,6 @@ function ResultBody({ partOfSpeech, definitions, synonyms }) {
                   )}
               </span>
             ))}
-            {/* <span className="result-body__synonym h-sm">
-              electronic keyboard
-            </span> */}
           </div>
         </div>
       )}
