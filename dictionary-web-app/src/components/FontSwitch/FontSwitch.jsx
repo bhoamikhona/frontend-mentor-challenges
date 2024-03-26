@@ -1,21 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./FontSwitch.css";
 import { ReactComponent as DropDownIcon } from "../../assets/images/icon-arrow-down.svg";
 
 function FontSwitch() {
-  const [currentFont, setCurrentFont] = useState("Sans Serif");
-  const [open, setOpen] = useState(false);
-
   const fonts = {
     sans: "Sans Serif",
     serif: "Serif",
     mono: "Mono",
   };
 
+  const [currentFont, setCurrentFont] = useState(() => {
+    return localStorage.getItem("font") || "sans";
+  });
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("font", currentFont);
+    document.querySelector("body").setAttribute("font-choice", currentFont);
+  }, [currentFont]);
+
   const setFont = function (fontChoice) {
-    document.querySelector("body").setAttribute("font-choice", fontChoice);
+    setCurrentFont(fontChoice);
     setOpen(false);
-    setCurrentFont(fonts[fontChoice]);
   };
 
   const switchFont = function (e) {
@@ -31,7 +37,7 @@ function FontSwitch() {
     <div className="dropdown">
       <button className="dropdown__btn b-md" onClick={handleOpen}>
         <div className="dropdown__text">
-          <span className="dropdown__selected-text">{currentFont}</span>
+          <span className="dropdown__selected-text">{fonts[currentFont]}</span>
           <DropDownIcon />
         </div>
       </button>
