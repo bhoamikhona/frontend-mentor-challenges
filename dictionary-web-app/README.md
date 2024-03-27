@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Frontend Mentor - Dictionary Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my solution to the [Dictionary Web App](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL).
 
-## Available Scripts
+## Screenshot
 
-In the project directory, you can run:
+![dictionary-web-app-solution-screenshot](https://github.com/bhoamikhona/frontend-mentor-challenges/assets/50435319/2fefc575-54a6-4bc5-9fbd-1038b2424857)
 
-### `npm start`
+## Links
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Solution URL: [Link](https://github.com/bhoamikhona/frontend-mentor-challenges/tree/main/dictionary-web-app)
+- Live Site URL: [Link](https://dictionary-web-app-bhoami-nine.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built with
 
-### `npm test`
+- JavaScript
+- React.js
+- Axios
+- [Dictionary API](https://dictionaryapi.dev/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Solution Retrospective
 
-### `npm run build`
+### What are you most proud of, and what would you do differently next time?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I am fairly new in terms of using React so the fact that I was able to complete this project makes me feel proud. It was definitely challenging for someone who is a beginner. I am still learning about redux and context so, next time that I make this project, I will probably end up using one of those two.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### What challenges did you encounter, and how did you overcome them?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+My biggest issue was when I set the initial state of data to null.
 
-### `npm run eject`
+I wanted to set "keyboard" as the initial value and then use the useEffect hook to call the API to get its data when the page first renders but, I was facing a lot of errors regarding it. For this I saw a few YouTube videos, and googled online along with checking out some Stack Overflow queries however, I am still not sure what is going on. So, I will continue my research on the topic.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Another issue was passing data as props from one component to another. I used async-await before I got the data and for some reason when I passed the data from one component to another, and tried destructure the data there, I got an error. For this, I asked one of my acquaintance to help me figure out why that was happening, and I got to know that when I pass data to another component, I need to check if the data is null in that component before using it. Which is something that I find weird so, I mean to do some more research about it.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### What specific areas of your project would you like help with?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Honestly, it would be great to have feedback on anything. Like I said, I am a beginner in ReactJS and I am sure there is a huge room for improvement so, any constructive feedback would be greatly appreciated. Thank you!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Author
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [@bhoamikhona](https://github.com/bhoamikhona)
