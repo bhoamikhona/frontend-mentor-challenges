@@ -1,0 +1,30 @@
+.toggle-btn {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.25rem;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+}
+
+.toggle-btn:hover > .toggle-text {
+  color: var(--theme-btn-hover);
+}
+.toggle-btn:hover > .toggle-icon > .icon {
+  fill: var(--theme-btn-hover);
+}
+
+.toggle-text {
+  color: var(--tertiary-text);
+  text-transform: uppercase;
+}
+
+.toggle-icon {
+  fill: var(--tertiary-text);
+}

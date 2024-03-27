@@ -1,0 +1,46 @@
+:root {
+  --accent: #0079ff;
+  --error: #f74646;
+
+  --background: #f6f8ff;
+  --component-background: #fefefe;
+  --primary-text: #4b6a9b;
+  --secondary-text: #2b3442;
+  --tertiary-text: #697c9a;
+  --logo: #222731;
+  --theme-btn-hover: #222731;
+}
+
+[theme-choice="dark"] {
+  --background: #141d2f;
+  --component-background: #1e2a47;
+  --primary-text: #ffffff;
+  --secondary-text: #ffffff;
+  --tertiary-text: #ffffff;
+  --logo: #ffffff;
+  --theme-btn-hover: #90a4d4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--secondary-text);
+  background-color: var(--background);
+
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+
+  padding: 6rem;
+}
