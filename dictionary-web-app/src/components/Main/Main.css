@@ -59,3 +59,10 @@
 .form.error .error-label {
   color: var(--error);
 }
+
+.loader-container {
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

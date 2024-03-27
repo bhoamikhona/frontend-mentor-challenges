@@ -4,31 +4,31 @@ import axios from "axios";
 import { ReactComponent as SearchIcon } from "../../assets/images/icon-search.svg";
 import NotFound from "../NotFound/NotFound.jsx";
 import DisplayResult from "../DisplayResult/DisplayResult.jsx";
+import { Triangle } from "react-loader-spinner";
 
 function Main() {
   const [word, setWord] = useState("");
   const [error, setError] = useState(false);
   const [wordNotFound, setWordNotFound] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const [data, setData] = useState([]);
 
   const getData = async function () {
     try {
-      console.log("word", word);
+      setLoading(true);
       const response = await axios.get(
         `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
       );
 
-      console.log("response", response.data[0]);
-
       setError(false);
       setWordNotFound(false);
 
-      setData(() => response.data[0]);
-      console.log("data", data);
+      setData(response.data[0]);
     } catch (error) {
-      console.log(error);
       setWordNotFound(true);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -74,8 +74,25 @@ function Main() {
       {error && (
         <span className="error-label h-sm">Whoops, can't be empty...</span>
       )}
-
-      {wordNotFound ? <NotFound /> : <DisplayResult data={data} />}
+      {loading && (
+        <div className="loader-container">
+          <Triangle
+            visible={true}
+            height={80}
+            width={80}
+            color="#a445ed"
+            ariaLabel="triangle-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+            className="loader"
+          />
+        </div>
+      )}
+      {!loading && wordNotFound ? (
+        <NotFound />
+      ) : (
+        !loading && <DisplayResult data={data} />
+      )}
     </form>
   );
 }
