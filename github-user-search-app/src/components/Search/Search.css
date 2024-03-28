@@ -8,6 +8,7 @@
   height: 6.9rem;
   border-radius: 1.5rem;
   padding: 0 1rem 0 2rem;
+  margin-bottom: 2rem;
 
   box-shadow: var(--component-shadow);
 }
@@ -56,4 +57,16 @@
 
 .search-btn:hover {
   background-color: var(--search-btn-hover);
+}
+
+@media (max-width: 37.5rem) {
+  .search-input {
+    font-size: 1.3rem;
+  }
+
+  .search-btn {
+    width: 8.4rem;
+    height: 4.6rem;
+    padding: 0 1rem;
+  }
 }
