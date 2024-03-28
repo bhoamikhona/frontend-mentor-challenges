@@ -1,6 +1,8 @@
 :root {
   --accent: #0079ff;
   --error: #f74646;
+  --white: #ffffff;
+  --search-btn-hover: #60abff;
 
   --background: #f6f8ff;
   --component-background: #fefefe;
@@ -9,6 +11,7 @@
   --tertiary-text: #697c9a;
   --logo: #222731;
   --theme-btn-hover: #222731;
+  --component-shadow: 0 1rem 1.875rem -0.625rem rgba(70, 96, 187, 19.86%);
 }
 
 [theme-choice="dark"] {
@@ -19,6 +22,7 @@
   --tertiary-text: #ffffff;
   --logo: #ffffff;
   --theme-btn-hover: #90a4d4;
+  --component-shadow: none;
 }
 
 * {
@@ -43,4 +47,8 @@ body {
   width: 100%;
 
   padding: 6rem;
+}
+
+.hidden {
+  display: none;
 }
