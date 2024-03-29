@@ -5,77 +5,97 @@ import { ReactComponent as TwitterIcon } from "../../assets/icon-twitter.svg";
 import { ReactComponent as LinkIcon } from "../../assets/icon-website.svg";
 import { ReactComponent as CompanyIcon } from "../../assets/icon-company.svg";
 
-function Main() {
+function Main({
+  avatar_url,
+  bio,
+  blog,
+  company,
+  created_at,
+  followers,
+  following,
+  location,
+  login,
+  name,
+  public_repos,
+  twitter_username,
+  isLoading,
+}) {
   return (
     <main className="main">
       <div className="avatar-container">
         <div className="avatar-img-container">
-          <img
-            src="https://avatars.githubusercontent.com/u/583231?v=4"
-            alt="user-avatar"
-            className="avatar-img"
-          />
+          <img src={avatar_url} alt="user-avatar" className="avatar-img" />
         </div>
       </div>
       <div className="user-info">
         <div className="user">
-          <h2 className="user__name">The Octocat</h2>
-          <span className="user__username">@octocat</span>
+          <h2 className="user__name">{name}</h2>
+          <span className="user__username">@{login}</span>
         </div>
-        <span className="date">Joined 25 Jan 2011</span>
+        <span className="date">Joined {created_at}</span>
       </div>
       <div className="user-details">
-        <p className="user__bio">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-          perferendis minima numquam distinctio aperiam similique soluta minus
-          ipsam repellat quae?
-        </p>
+        <p className="user__bio">{bio}</p>
         <div className="user__stats">
           <div className="user__stat">
             <h3 className="user__stat-title">Repos</h3>
-            <span className="user__stat-value">8</span>
+            <span className="user__stat-value">{public_repos}</span>
           </div>
           <div className="user__stat">
             <h3 className="user__stat-title">Followers</h3>
-            <span className="user__stat-value">3938</span>
+            <span className="user__stat-value">{followers}</span>
           </div>
           <div className="user__stat">
             <h3 className="user__stat-title">Following</h3>
-            <span className="user__stat-value">9</span>
+            <span className="user__stat-value">{following}</span>
           </div>
         </div>
         <div className="user__list-container">
           <ul className="user__list">
-            <li className="user__list-item">
+            <li className={`user__list-item ${location ? "" : "unavailable"}`}>
               <span className="user__location-icon icon">
-                <LocationIcon />
+                <LocationIcon className={location ? "" : "unavailable"} />
               </span>
-              <span className="user__location">Mumbai, India</span>
+              <span className="user__location">
+                {location ? location : "Not Found"}
+              </span>
             </li>
-            <li className="user__list-item">
+            <li
+              className={`user__list-item ${
+                twitter_username ? "" : "unavailable"
+              }`}
+            >
               <span className="user__twitter-icon icon">
-                <TwitterIcon />
+                <TwitterIcon
+                  className={twitter_username ? "" : "unavailable"}
+                />
               </span>
-              {/* <a href="https://github.com/bhoamikhona" className="user__link">
-                Twitter Link
-              </a> */}
-              <span className="unavailable">Not Available</span>
+              <span className="user__twitter">
+                {twitter_username ? twitter_username : "Not Found"}
+              </span>
             </li>
-            <li className="user__list-item">
+            <li className={`user__list-item ${blog ? "" : "unavailable"}`}>
               <span className="user__link-icon icon">
-                <LinkIcon />
+                <LinkIcon className={blog ? "" : "unavailable"} />
               </span>
               <span className="user__link">
-                <a href="https://github.com/bhoamikhona" className="user__link">
-                  Portfolio Link
+                <a
+                  href={blog ? blog : "#"}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="user__link"
+                >
+                  {blog ? blog : "Not Found"}
                 </a>
               </span>
             </li>
-            <li className="user__list-item">
+            <li className={`user__list-item ${company ? "" : "unavailable"}`}>
               <span className="user__company-icon icon">
-                <CompanyIcon />
+                <CompanyIcon className={company ? "" : "unavailable"} />
               </span>
-              <span className="user__company">@github</span>
+              <span className="user__company">
+                {company ? company : "Not Found"}
+              </span>
             </li>
           </ul>
         </div>

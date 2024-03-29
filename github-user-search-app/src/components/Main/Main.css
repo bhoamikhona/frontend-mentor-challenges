@@ -124,6 +124,7 @@
   align-items: center;
   justify-content: space-between;
   row-gap: 1.5rem;
+  column-gap: 2rem;
 }
 
 .user__list-item {
@@ -155,6 +156,7 @@
 
 .unavailable {
   opacity: 0.5;
+  fill-opacity: 0.5;
 }
 
 @media (max-width: 76.8em) {

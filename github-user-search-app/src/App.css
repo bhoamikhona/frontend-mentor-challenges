@@ -3,3 +3,10 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.loading-animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
