@@ -102,7 +102,7 @@ function Search({ setData, setIsLoading, userNotFound, setUserNotFound }) {
         id="search"
         placeholder="Search GitHub username..."
         autoComplete="off"
-        spellCheck="off"
+        spellCheck="false"
       />
       <span className={`search-error ${userNotFound ? "" : "hidden"} `}>
         No results
